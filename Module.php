@@ -25,9 +25,11 @@ class Module extends AbstractModule
 		parent::onBootstrap($e);
 		
         $sm = $e->getApplication()->getServiceManager();
-        $volume = $sm->get('KapMessage\FileManager\MessagePartFileVolume');
-        $volumeManager = $sm->get('KapitchiFileManager\Volume\Manager');
-        $volumeManager->setService('messagePart', $volume);
+        
+        //mz: WIP
+//        $volume = $sm->get('KapMessage\FileManager\MessagePartFileVolume');
+//        $volumeManager = $sm->get('KapitchiFileManager\Volume\Manager');
+//        $volumeManager->setService('messagePart', $volume);
 	}
     
     public function getControllerConfig()
