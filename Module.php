@@ -70,11 +70,11 @@ class Module extends AbstractModule
     {
         return array(
             'factories' => array(
-                'messengerMessage' => function($sm) {
+                'message' => function($sm) {
                     $ins = new View\Helper\Message($sm->getServiceLocator()->get('KapMessage\Service\Message'));
                     return $ins;
                 },
-                'messengerDelivery' => function($sm) {
+                'messageDelivery' => function($sm) {
                     $ins = new View\Helper\Delivery($sm->getServiceLocator()->get('KapMessage\Service\Delivery'));
                     return $ins;
                 }
