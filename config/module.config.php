@@ -2,14 +2,9 @@
 return array(
     'plugin_manager' => array(
         'invokables' => array(
-            'Messenger/KapitchiIdentity' => 'KapMessage\Plugin\KapitchiIdentity',
+            //TODO disabled until it's fully implemented in showcase
+            //'Messenger/KapitchiIdentity' => 'KapMessage\Plugin\KapitchiIdentity',
         ),
-//        'factories' => array(
-//            'Identity/AuthCredential' => function($sm) {
-//                $ins = new \KapitchiIdentity\Plugin\AuthCredential();
-//                return $ins;
-//            }
-//        )
     ),
     'controller_plugins' => array(
         'classes' => array(
